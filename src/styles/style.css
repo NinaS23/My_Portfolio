@@ -56,13 +56,12 @@ section{
 }
 
 .about_me{
-  background-color: blueviolet;
   margin-left: 2rem;
-  width: 90%;
-  height: 90%;
-border-radius: 15px;  
-padding-left: 5px;
-padding-top: 5px;
+  width: 94%;
+  height: 100%;
+  border-radius: 15px;  
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 .about_me::after{
@@ -82,23 +81,39 @@ padding-top: 5px;
   width: 85%;
   top: 60%;
   left: 5%;
-  background-color: aqua;
+  background-image: url("/src/assets/images/blue.jpeg");
+}
+.add_background_color{
+  border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+  background-image: linear-gradient(90deg, #197DB6 10%, #74CCFF 93.82%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   
+  
 }
 .my_picture{
-  background-color: blue;
   margin-left: 2rem;
   width: 40%;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .my_picture:hover{
   transform: scale(1.1);
     cursor: pointer;
     transition: 0.2s;
     max-width: 100%;
-
- 
+  
 }
 h1{
   color: aliceblue;
 }
 
+.picture{
+  border-radius: 60% 40% 40% 20% / 70% 50% 30% 13%;
+  width: 320px;
+}
