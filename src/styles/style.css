@@ -42,6 +42,63 @@ width: 80%;
 margin-left: 9%;
 
 }
+
+section{
+
+  display: flex;
+  margin-top: 16px;
+  height: 500px;
+}
+.about_me_container{
+  width: 50%;
+  margin-left: 15px;
+  height: 100%;
+}
+
+.about_me{
+  background-color: blueviolet;
+  margin-left: 2rem;
+  width: 90%;
+  height: 90%;
+border-radius: 15px;  
+padding-left: 5px;
+padding-top: 5px;
+}
+
+.about_me::after{
+  content: "";
+  display:block;
+  margin-top: 2px;
+  width: 8%;
+  height: 0.1rem;
+  background-image: url("/src/assets/images/blue.jpeg");
+}
+
+
+.decoration_bar{
+  height: 1px;
+  position: sticky;
+  z-index: 1;
+  width: 85%;
+  top: 60%;
+  left: 5%;
+  background-color: aqua;
+}
+.my_picture{
+  background-color: blue;
+  margin-left: 2rem;
+  width: 40%;
+  border-radius: 15px;
+}
+.my_picture:hover{
+  transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
+    max-width: 100%;
+
+ 
+}
 h1{
   color: aliceblue;
 }
+
