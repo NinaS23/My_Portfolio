@@ -50,7 +50,7 @@ margin-left: 9%;
 
 @media (max-width: 820px)
 {
-  section
+  section:first-of-type
    {
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -73,7 +73,7 @@ margin-left: 9%;
 }
 @media (min-width: 1280px)
 {
-  section
+  section:first-of-type
    {
     padding-top: 5rem;
    }
@@ -83,12 +83,11 @@ margin-left: 9%;
 }
 
 
-section{
+section:first-of-type{
   display: flex;
   margin-top: 16px;
   height: 500px;
 }
-
 
 .about_me{
   margin-left: 2rem;
@@ -159,4 +158,71 @@ h1{
    {
     width: 170px;
   }
+}
+
+
+body::-webkit-scrollbar {
+  width: 16px;
+  height: fit-content;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#2D8DC5;
+  border-radius: 100px;
+}
+
+@media (min-width: 760px)
+{
+
+  .habilities_box div{
+    display: flex;
+  }
+  .habilities_box div{
+    margin-left: 5px;
+  }
+}
+
+
+section#hability{
+  margin-top: 8%;
+}
+.habilities_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.habilities_box{
+  width: 90%;
+  display: flex;
+  margin-left: 3px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+.habilities_box div{
+  margin-left: 10px;
+}
+
+
+
+.hability{
+  background-color: #197DB6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 30px;
+  width: 128px;
+  height: 138px;
+  margin-top: 10px;
 }
