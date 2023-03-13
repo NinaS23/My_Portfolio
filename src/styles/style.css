@@ -213,16 +213,26 @@ section#hability{
 
 
 .hability{
-  background-color: #197DB6;
+
+background: rgba(41, 62, 90, 0.78);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 3%;
   border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 10px;
   border-top-left-radius: 30px;
+  border-top-right-radius: 50px;
   width: 128px;
   height: 138px;
   margin-top: 10px;
+}
+
+.hability:hover{
+  transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
+    max-width: 100%;
+    background-color: #2D8DC5;
+  
 }
