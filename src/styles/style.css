@@ -44,7 +44,7 @@ header::after {
 }
 
 .about_me_container {
-  width: 50%;
+  width: 40%;
   margin-left: 15px;
   height: 100%;
 }
@@ -59,10 +59,19 @@ header::after {
   }
 
   .about_me_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
     margin-top: 15px;
-    margin-left: 0px;
     width: 100%;
 
+  }
+  .about_me {
+    background-color: rgba(41, 62, 90, 0.78);
+    border-radius: 30px;
+    width: 94%;
+    height: 100%;
   }
 
   .about_me::after {
@@ -87,17 +96,18 @@ header::after {
 
 section:first-of-type {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: 16px;
   height: 500px;
 }
 
 .about_me {
-  margin-left: 2rem;
-  width: 94%;
+  background-color: rgba(41, 62, 90, 0.78);
+  border-radius: 10px;
+  width: 95%;
   height: 100%;
-  border-radius: 15px;
-  padding-left: 5px;
-  padding-top: 5px;
+
 }
 
 .about_me::after {
@@ -110,15 +120,6 @@ section:first-of-type {
 }
 
 
-.decoration_bar {
-  height: 1px;
-  position: sticky;
-  z-index: 1;
-  width: 85%;
-  top: 60%;
-  left: 5%;
-  background-image: url("/src/assets/images/blue.jpeg");
-}
 
 .add_background_color {
   border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
@@ -215,8 +216,6 @@ section#hability {
 .habilities_box div {
   margin-left: 10px;
 }
-
-
 
 .hability {
   justify-content: center;
