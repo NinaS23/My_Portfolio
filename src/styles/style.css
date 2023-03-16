@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+
 body {
+  transition: background 0.2s linear;
   background-color: #030512;
 
 }
@@ -6,6 +15,47 @@ body {
 * {
   box-sizing: border-box;
 }
+
+
+body.ligth {
+	background: #FDFEFE;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #24648A;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
 
 header {
   position: sticky;
@@ -17,13 +67,17 @@ header {
 
 }
 
+header.ligth{
+  background-color: #030512;
+}
+
 header::after {
   content: "";
   display: block;
   position: absolute;
-  margin-top: 20px;
   width: 100%;
-  height: 0.1rem;
+  height: 0.3rem;
+  margin-top: 14px;
   background-image: url("/src/assets/images/blue.jpeg");
 }
 
@@ -110,7 +164,8 @@ section:first-of-type {
 
 }
 
-.about_me::after {
+
+.line_decoration::after {
   content: "";
   display: block;
   margin-top: 2px;
@@ -119,8 +174,19 @@ section:first-of-type {
   background-image: url("/src/assets/images/blue.jpeg");
 }
 
+.about_me_description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 26px;
+  height: 90%;
+  border-radius: 10px;
+  background-color: #197DB6;
+}
 
-
+.about_me_description.ligth{
+  background-color: #030512;
+}
 .add_background_color {
   border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
   background-image: linear-gradient(90deg, #197DB6 10%, #74CCFF 93.82%);
@@ -174,6 +240,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #2D8DC5;
   border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030512;
 }
 
 @media (min-width: 760px) {
@@ -232,6 +302,9 @@ section#hability {
   height: 138px;
   margin-top: 10px;
   
+}
+.hability.ligth {
+  background-color:#030512
 }
 
 .hability:hover {
