@@ -8,7 +8,7 @@
 
 body {
   transition: background 0.2s linear;
-  background-color: #030512;
+  background-color: #0F0C14;
 
 }
 
@@ -188,8 +188,8 @@ section:first-of-type {
   background-color: #030512;
 }
 .add_background_color {
-  border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
-  background-image: linear-gradient(90deg, #197DB6 10%, #74CCFF 93.82%);
+  border-radius: 40% 20% 43% 50% / 60% 17% 30% 25%;
+  background-image: linear-gradient(90deg, #B0B6E0 10%, #5D527D 93.82%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +201,6 @@ section:first-of-type {
 .my_picture {
   margin-left: 2rem;
   width: 40%;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
