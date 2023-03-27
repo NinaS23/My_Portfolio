@@ -27,7 +27,7 @@ body.ligth {
 }
 
 .label {
-	background-color: #24648A;
+	background-color: #557FAA;
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
@@ -230,7 +230,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2D8DC5;
+  background-color: #5D527D;
   border-radius: 100px;
 }
 
@@ -240,18 +240,30 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 760px) {
 
-  .habilities_box div {
+  section#hability {
+    margin-top: 8%;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
 
   .habilities_box div {
+    display: flex;
     margin-left: 5px;
   }
+
 }
+
 
 
 section#hability {
   margin-top: 8%;
+  display: flex;
+  flex: c;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .habilities_container {
@@ -281,7 +293,7 @@ section#hability {
 
 .hability {
   justify-content: center;
-  background: rgba(41, 62, 90, 0.78);
+  background: linear-gradient(90deg, #5161d6 10%, #4a4262 93.82%);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -292,7 +304,8 @@ section#hability {
   border-top-right-radius: 50px;
   width: 128px;
   height: 138px;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-left: 4px;
   
 }
 .hability.ligth {
@@ -304,8 +317,6 @@ section#hability {
   cursor: pointer;
   transition: 0.2s;
   max-width: 100%;
-  background-color: #24648a;
-
 }
 
 .hability_info {
@@ -338,4 +349,5 @@ h3{
   width: 80px;
   height: 50px;
 }
+
 
