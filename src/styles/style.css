@@ -68,7 +68,7 @@ header {
 }
 
 header.ligth{
-  background-color: #030512;
+  background-color: #0E0D25;
 }
 
 header::after {
@@ -178,7 +178,7 @@ section:first-of-type {
 }
 
 .about_me_description.ligth{
-  background-color: #89A7D3;
+  background-color: #FDFEFE;
 }
 .add_background_color {
   border-radius: 40% 20% 43% 50% / 60% 17% 30% 25%;
@@ -200,7 +200,7 @@ section:first-of-type {
   justify-content: center;
 }
 
-.my_picture:hover {
+.add_background_color:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: 0.2s;
